@@ -1,3 +1,5 @@
+/* globals module */
+
 /* Task Description */
 /* 
 	Write a function that sums an array of numbers:
@@ -31,4 +33,4 @@ function solve() {
     };
 }
 
-//module.exports = solve;
+module.exports = solve;
