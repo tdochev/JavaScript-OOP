@@ -9,8 +9,26 @@
 */
 
 function solve() {
-	return function sum() {
-	}
+    'use strict';
+    return function sum(arr) {
+        let result = 0;
+
+        if (typeof arr === 'undefined') {
+            throw ("Number cannot be undefined");
+        } else {
+            if (arr.length === 0) {
+                return null;
+            }
+            arr.forEach(function(i) {
+                i = +i;
+                if (isNaN(i)) {
+                    throw "Some of the elements is not convertible to number!";
+                }
+                result += i;
+            });
+        }
+        return result;
+    };
 }
 
-module.exports = solve;
+//module.exports = solve;
